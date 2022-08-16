@@ -12,7 +12,7 @@ const eqArrays = function(firstArray, secondArray) {
   // testing that each length of the arrays are the same first, if not return false
   if (firstArray.length === secondArray.length) {
     // loop through each element of the arrays simultaneously
-    for(let i = 0; i < firstArray.length; i++) {
+    for (let i = 0; i < firstArray.length; i++) {
       // test if each element is equal to each other
       if (firstArray[i] !== secondArray [i]) {
         return false;

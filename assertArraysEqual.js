@@ -25,7 +25,7 @@ const eqArrays = function(firstArray, secondArray) {
 };
 
 // first take in the arrays as parameters
-const assertArraysEquals = function(arrayOne, arrayTwo) {
+const assertArraysEqual = function(arrayOne, arrayTwo) {
   // then insert them into the eq arrays function
   if (eqArrays(arrayOne, arrayTwo)) {
     console.log(`✅ Assertion Passed: ${arrayOne} === ${arrayTwo}`);
@@ -34,7 +34,7 @@ const assertArraysEquals = function(arrayOne, arrayTwo) {
   }
 };
 
-assertArraysEquals([1,2,3,4],[1,2,3,4]);
-assertArraysEquals([1,2,3,"4"],[1,2,3,4]);
-assertArraysEquals([1,2,3,5],[1,2,3,4]);
-assertArraysEquals(["a","d",3,5],[1,2,3,4]);
+assertArraysEqual([1,2,3,4],[1,2,3,4]);
+assertArraysEqual([1,2,3,"4"],[1,2,3,4]);
+assertArraysEqual([1,2,3,5],[1,2,3,4]);
+assertArraysEqual(["a","d",3,5],[1,2,3,4]);

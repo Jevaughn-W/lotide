@@ -1,13 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed:  ${actual} === ${expected}`);
-  } else {
-    console.log(`😓 Assertion Failed: ${actual} !== ${expected}`);
-  }
-
-};
-
-// take in the arrays 1 and arrays 2
 const eqArrays = function(firstArray, secondArray) {
   // testing that each length of the arrays are the same first, if not return false
   if (firstArray.length === secondArray.length) {
@@ -21,6 +11,16 @@ const eqArrays = function(firstArray, secondArray) {
     return true;
   } else {
     return false;
+  }
+};
+
+// first take in the arrays as parameters
+const assertArraysEqual = function(arrayOne, arrayTwo) {
+  // then insert them into the eq arrays function
+  if (eqArrays(arrayOne, arrayTwo)) {
+    console.log(`✅ Assertion Passed: ${arrayOne} === ${arrayTwo}`);
+  } else {
+    console.log(`😓 Assertion Failed: ${arrayOne} !== ${arrayTwo}`);
   }
 };
 
@@ -45,5 +45,5 @@ const flatten = function(input) {
 
 
 
-assertEqual(true,eqArrays([1,2,3,4,5,3],flatten([1, 2, [3, 4], 5, [3]])));
-assertEqual(true,eqArrays([1,2,3,4,5],flatten([1, 2, [3, 4], 5, []])));
+assertArraysEqual([1,2,3,4,5,3],flatten([1, 2, [3, 4], 5, [3]]));
+assertArraysEqual([1,2,3,4,5],flatten([1, 2, [3, 4], 5, []]));

@@ -1,16 +1,19 @@
 // Importing Tail function and assert function
 const tail = require('../tail');
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
+
 
 
 // Test Code
 
-// const input = process.argv; // use if I wanted the input from CLI rather that in the program since argv produces an array
-const input = [2, 3, 4, 45, 1, 5];
-const result = tail(input);
+describe("Function which removes the first element and return the remaining array", () => {
+  it("should return [3, 4, 45, 1, 5] from [2, 3, 4, 45,1 , 5]", () => {
+    const input = [2, 3, 4, 45, 1, 5];
+    assert.deepEqual(tail(input), [3, 4, 45, 1, 5]);
+  });
 
-for (let i = 0; i < result.length; i++) { 
-  assertEqual(input[i + 1], result[i]);  //need to start testing arg at 3
-}
-console.log("\nCheck of input array length");
-assertEqual(input.length, 6); // check to see that the array length has not changed
+  it("should return input length 6", () => {
+    const input = [2, 3, 4, 45, 1, 5];
+    assert.deepEqual(input.length, 6);
+  });
+});

@@ -24,6 +24,7 @@ const countLetters = function(inputString) {
   return letterCount;
 };
 
+module.exports = countLetters;
 
 console.log(countLetters("alligator"));
 console.log(countLetters("Mississippi"));

@@ -68,3 +68,5 @@ console.log('---');
 const wordArray = ["ground", "control", "to", "major", "tom"];
 const results3 = takeUntil(wordArray, word => word === 'to');
 assertArraysEqual(results3,['ground', 'control']);
+
+module.exports = takeUntil;

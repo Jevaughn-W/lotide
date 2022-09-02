@@ -51,3 +51,5 @@ const results2 = map(numbers, (num) => {
   }
 });
 assertArraysEqual(results2,[200,1200]);
+
+module.exports = map;

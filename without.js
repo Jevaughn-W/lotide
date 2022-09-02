@@ -49,3 +49,5 @@ without(words, ["lighthouse"]); // no need to capture return value for this test
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
 console.log(without([1,2,3,4,5],[4,5]));
+
+module.exports = without;

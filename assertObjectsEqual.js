@@ -40,19 +40,20 @@ const eqObjects = function(inputObject, controlObject) {
 
 // assertOjectsEqual function
 
-const assertObjectsEqual = function(actual, expected) {
-  const inspect = require('util').inspect;
-  if (eqObjects(actual, expected)) {
-    console.log(`✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
-  } else {
-    console.log(`😓 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
-  }
-};
+module.exports = assertArraysEqual;
+// const assertObjectsEqual = function(actual, expected) {
+//   const inspect = require('util').inspect;
+//   if (eqObjects(actual, expected)) {
+//     console.log(`✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
+//   } else {
+//     console.log(`😓 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
+//   }
+// };
 
-const car = {type: "coupe", colour: "red"};
-const carOne = {type: "coupe", colour: "red"};
-const carTwo = {type: "suv", colour: "red"};
+// const car = {type: "coupe", colour: "red"};
+// const carOne = {type: "coupe", colour: "red"};
+// const carTwo = {type: "suv", colour: "red"};
 
 
-assertObjectsEqual(car, carOne);
-assertObjectsEqual(carOne, carTwo);
+// assertObjectsEqual(car, carOne);
+// assertObjectsEqual(carOne, carTwo);

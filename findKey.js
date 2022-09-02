@@ -15,9 +15,7 @@ const findKey = function (object, callback) {
   for(let item in object) {
     if(callback(object[item])){
       return item;
-      
     }
-    
   }
 };
 
@@ -45,3 +43,6 @@ assertEqual(findKey({
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
 }, x => x.stars % 3 === 0), "Akaleri");
+
+
+module.exports = findKey;

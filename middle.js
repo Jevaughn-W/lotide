@@ -3,21 +3,30 @@
 // if less than or equal to two return an empty array
 // dividing the length of an odd array gives the midpoint
 
-// Driver Code
 
+const evenArray = (inputArray) => {
+  let middleElement =[];
+  let midIndex = inputArray.length / 2;
+  middleElement.push(inputArray[midIndex - 1]);
+  middleElement.push(inputArray[midIndex]);
+  return middleElement;
+};
+
+const oddArray = (inputArray) => {
+  let middleElement =[];
+  let midIndex = Math.floor(inputArray.length / 2);
+  middleElement.push(inputArray[midIndex]);
+  return middleElement;
+};
+
+// Driver Code
 const middle = function(inputArray) {
-  let middleElement = [];
   if (inputArray.length <= 2) {
-    return middleElement;
+    return [];
   } else if (inputArray.length % 2 === 0) {
-    let midIndex = inputArray.length / 2;
-    middleElement.push(inputArray[midIndex - 1]);
-    middleElement.push(inputArray[midIndex]);
-    return middleElement;
+    return evenArray(inputArray);
   } else {
-    let midIndex = Math.floor(inputArray.length / 2);
-    middleElement.push(inputArray[midIndex]);
-    return middleElement;
+    return oddArray(inputArray);
   }
 };
 

@@ -24,4 +24,6 @@ const countOnly = function(allItems, itemsToCount) {
 return distinctElementsCount; // return final output
 };
 
+
+// Export function
 module.exports = countOnly;

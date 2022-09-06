@@ -5,16 +5,12 @@
 
 //Importing eqArrays
 
-const eqArrays = require('./eqArrays.js');
+const eqArrays = require('./eqArrays'); // Doesn't run when using index
 
 // Driver Code
 
 const assertArraysEqual = function(arrayOne, arrayTwo) {
-  if (eqArrays(arrayOne, arrayTwo)) {
-    console.log(`✅ Assertion Passed: ${arrayOne} === ${arrayTwo}`);
-  } else {
-    console.log(`😓 Assertion Failed: ${arrayOne} !== ${arrayTwo}`);
-  }
+  eqArrays(arrayOne, arrayTwo) ? console.log(`✅ Assertion Passed: ${arrayOne} === ${arrayTwo}`) : console.log(`😓 Assertion Failed: ${arrayOne} !== ${arrayTwo}`);
 };
 
 // Export asserArrays Equal

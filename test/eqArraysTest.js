@@ -1,7 +1,7 @@
 // Importing required functions
 
-const assertEqual = require('../index').assertEqual;
-const eqArrays = require('../index').eqArrays;
+const assertEqual = require('../assertEqual');
+const eqArrays = require('../eqArrays');
 
 // Test Code
 

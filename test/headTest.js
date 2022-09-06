@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const head = require('../index').head;
+const head = require('../head');
 
 //Test Code
 

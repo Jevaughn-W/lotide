@@ -1,5 +1,5 @@
 // Import module
-const assertObjectsEqual = require('../index').assertObjectsEqual;
+const assertObjectsEqual = require('../assertObjectsEqual');
 
 // Test Code
 

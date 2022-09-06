@@ -1,7 +1,7 @@
 // Imports
 
 const assert = require('chai').assert;
-const middle = require('../index').middle;
+const middle = require('../middle');
 
 // Test Code
 

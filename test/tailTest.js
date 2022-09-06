@@ -1,5 +1,5 @@
 // Importing Tail function and assert function
-const tail = require('../index').tail;
+const tail = require('../tail');
 const assert = require('chai').assert;
 
 
